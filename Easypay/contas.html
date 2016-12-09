@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<!-- Cor nos devices -->
+		<meta name="theme-color" content="#4F827D">
+		<!-- Define a portabilidade em aparelhos mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>EasyPay</title>
+		<!-- Web app -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Cache-Control: max-age=3600, must-revalidate"/>
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="assets/images/favicon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">    
+        <meta name="apple-mobile-web-app-title" content="iDeal Reservas.com">
+        <link rel="apple-touch-startup-image" href="assets/images/locked-icon.png">
+        <link rel="apple-touch-icon" href="assets/images/locked-icon.png">    
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/stylesheet_system.css" type="text/css" />
+		
+	</head>
+
+	<body data-ng-app="">
+        <nav class="navbar navbar-inverse linha-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle botao-mobile" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="index.html">EasyPay</a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li ><a href="#" title="Usuário" class="text-center"><span class="glyphicon glyphicon-user"></span> Nome do usuário</a></li>
+                        <li class="active"><a href="index.html" title="Sair" class="text-center"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+		<div class="container-fluid">
+			<div class="row">
+                <div class="col-md-2">
+                    <nav class="navbar navbar-sidebar">
+                        <ul class="nav nav-sidebar">
+                            <li><a href="configuracoes.html">Configurações</a></li>
+                            <li class="active"><a>Contas<span class="sr-only">(current)</span></a></li>
+                            <li><a href="registro.html">Registro</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="col-md-9 tableContas" style="background-color: #eee">
+                    <div class="row">
+                        <div class="col-sm-5">
+                            <form role="form">
+                                <div class="form-group has-feedback">
+                                    <input type="search" class="form-control" title="Pesquise aqui suas contas.." placeholder="Pesquisar" maxlength="20" /> 
+                                    <i class="glyphicon glyphicon-search form-control-feedback"></i>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="row" >
+                        <div class="col-sm-12">
+                              <div class="table-responsive">          
+                                  <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th class="text-center">Título</th>
+                                            <th class="text-center">Vencimento</th>
+                                            <th class="text-center">Pagamento</th>
+                                         </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="text-center">
+                                            <td>Marisa</td>
+                                            <td>20/05/2016</td>
+                                            <td>20/06/2016</td>
+                                            <td><a role="button" class="editarConta" data-toggle="modal" data-target="#modalEdicao" ><img src="assets/images/ed1t-icon.png"></img></a> &nbsp;&nbsp;&nbsp;
+                                            <a role="button" class="excluirConta" data-toggle="modal" data-target="#modalDelecao"><img src="assets/images/delete-icon.png"></img></a></td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>Fiat</td>
+                                            <td>21/05/2016</td>
+                                            <td>18/06/2016</td>
+                                            <td><a role="button" class="editarConta" data-toggle="modal" data-target="#modalEdicao" ><img src="assets/images/ed1t-icon.png"></img></a> &nbsp;&nbsp;&nbsp;
+                                            <a role="button" class="excluirConta" data-toggle="modal" data-target="#modalDelecao"><img src="assets/images/delete-icon.png"></img></a></td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>C&C</td>
+                                            <td>22/05/2016</td>
+                                            <td>20/06/2016</td>
+                                            <td><a role="button" class="editarConta" data-toggle="modal" data-target="#modalEdicao" ><img src="assets/images/ed1t-icon.png"></img></a> &nbsp;&nbsp;&nbsp;
+                                            <a role="button" class="excluirConta" data-toggle="modal" data-target="#modalDelecao"><img src="assets/images/delete-icon.png"></img></a></td>
+                                        </tr>
+                                        <tr class="text-center">
+                                            <td>Alura Cursos</td>
+                                            <td>22/05/2016</td>
+                                            <td>21/06/2016</td>
+                                            <td><a role="button" class="editarConta" data-toggle="modal" data-target="#modalEdicao" ><img src="assets/images/ed1t-icon.png"></img></a> &nbsp;&nbsp;&nbsp;
+                                            <a role="button" class="excluirConta" data-toggle="modal" data-target="#modalDelecao"><img src="assets/images/delete-icon.png"></img></a></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+		    <div class="row">
+		        <div class="col-md-12 text-right">
+		            <a role="button" data-toggle="modal" data-target="#novaConta" style="width: 2em; border-radius: 50%; background-color: #51B8B4; margin-top: 12%; margin-right: 3%;font-size: 2em; color: white" class="btn btn-md">+</a>
+		        </div>
+		    </div>
+		</div>
+		
+		<div class="modal fade" id="modalEdicao" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Edição de conta</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form role="form">
+                                    <div class="form-group has-feedback">
+                                        <label for="cd_barras_conta_editar"><strong>Código da conta</strong></label>
+                                        <input type="text" name="cd_barras_conta_editar" id="cd_barras_conta_editar" class="form-control"  title="Código de barras da conta" data-toggle="tooltip" data-placement="right" placeholder="Digite aqui seu código de barras" />
+                                        <i class="glyphicon glyphicon-question-sign form-control-feedback about"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nm_empresa_editar"><strong>Nome da empresa</strong></label>
+                                        <input type="text" name="nm_empresa_editar" id="nm_empresa_editar" class="form-control" placeholder="Nome da empresa" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dt_pagamento_editar"><strong>Data de pagamento</strong></label>
+                                        <input type="date" name="dt_pagamento_editar" id="dt_pagamento_editar" class="form-control" placeholder="Data de pagamento" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dt_vencimento_editar"><strong>Data de vencimento</strong></label>
+                                        <input type="date" name="dt_vencimento_editar" id="dt_vencimento_editar" class="form-control" placeholder="Data de vencimento" />
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-default" type="button" title="Editar">Editar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="modalDelecao" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Você tem certeza que deseja excluir esta conta?</h4>
+                        <p><small><strong>Caso a conta tenha como data final o dia de hoje, não será possível excluir.</strong></small></p>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form role="form">
+                                    <div class="form-group">
+                                        <label for="nm_senha"><strong>Você tem certeza que deseja fazer isto?</strong></label>
+                                        <input type="password" name="nm_senha" id="nm_senha" class="form-control" placeholder="Entre com sua senha para confirmar o ato.." />
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-default btn-danger" type="button" title="Excluir">Excluir</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="modal fade" id="novaConta" role="dialog">
+            <div class="modal-dialog">
+                <!-- Modal content-->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Nova Conta</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <form role="form">
+                                    <div class="form-group has-feedback">
+                                        <label for="cd_barras_conta"><strong>Código da conta</strong></label>
+                                        <input type="text" name="cd_barras_conta" id="cd_barras_conta" class="form-control"  title="Código de barras da conta" data-toggle="tooltip" data-placement="right" placeholder="Digite aqui seu código de barras" />
+                                        <i class="glyphicon glyphicon-question-sign form-control-feedback about"></i>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="nm_empresa"><strong>Nome da empresa</strong></label>
+                                        <input type="text" name="nm_empresa" id="nm_empresa" class="form-control" placeholder="Nome da empresa" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dt_pagamento"><strong>Data de pagamento</strong></label>
+                                        <input type="date" name="dt_pagamento" id="dt_pagamento" class="form-control" placeholder="Data de pagamento" />
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="dt_vencimento"><strong>Data de vencimento</strong></label>
+                                        <input type="date" name="dt_vencimento" id="dt_vencimento" class="form-control" placeholder="Data de vencimento" />
+                                    </div>
+                                    <div class="form-group text-center">
+                                        <button class="btn btn-default" type="button" title="Salvar">Salvar</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <!--<div class="modal-footer">-->
+                    <!--    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>-->
+                    <!--</div>-->
+                </div>
+            </div>
+        </div>
+		
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	
+  	<!-- Angular script -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  	
+  	<script src="assets/js/system.js"></script>
+	</body>
+</html>

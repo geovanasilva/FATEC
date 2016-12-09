@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<!-- Cor nos devices -->
+		<meta name="theme-color" content="#4F827D">
+		<!-- Define a portabilidade em aparelhos mobile -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Web app -->
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta http-equiv="Cache-Control: max-age=3600, must-revalidate"/>
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="192x192" href="assets/images/favicon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">    
+        <meta name="apple-mobile-web-app-title" content="iDeal Reservas.com">
+        <link rel="apple-touch-startup-image" href="assets/images/locked-icon.png">
+        <link rel="apple-touch-icon" href="assets/images/locked-icon.png">    
+		<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon" />
+		
+		<title>EasyPay</title>
+		<link rel="stylesheet" href="#">
+		
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link rel="stylesheet" href="assets/css/stylesheet_system.css" type="text/css" />
+		<link rel="stylesheet" href="assets/css/chartist.css" type="text/css" />
+	</head>
+
+	<body data-ng-app="">
+        <nav class="navbar navbar-inverse linha-navbar">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle botao-mobile" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span> 
+                    </button>
+                    <a class="navbar-brand" href="index.html">EasyPay</a>
+                </div>
+                
+                <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="contas.html" title="Início" class="text-center"><span class="glyphicon glyphicon-home"></span> Início</a></li>
+                        <li><a title="Usuário" class="text-center"><span class="glyphicon glyphicon-user"></span> Nome do usuário</a></li>
+                        <li><a href="index.html" title="Sair" class="text-center"><span class="glyphicon glyphicon-off"></span> Sair</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+		<div class="container-fluid">
+			<div class="row">
+                <div class="col-md-2">
+                    <nav class="navbar navbar-sidebar">
+                        <ul class="nav nav-sidebar">
+                            <li class="active"><a >Configurações</a></li>
+                            <li><a href="contas.html">Contas<span class="sr-only">(current)</span></a></li>
+                            <li ><a href="registro.html">Registros</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                
+                <div class="col-md-9" style="background-color: #eee; margin-top: 3%; margin-bottom: 3%">
+                    <div class="row" style="padding: 15px; background-color: #ddd">
+                        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+                            <span><strong>Configurações</strong></span>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-bottom: 3%">
+                        <span class="help-block " style="padding-left: 3%; padding-bottom: 2%">Os campos que possuírem um <span class="glyphicon glyphicon-asterisk" style="color: red"></span> são <strong>obrigatórios</strong></span>
+                        
+                        <form role="form" class="form-horizontal">
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="nm_usuario">Nome</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="email" class="form-control" id="nm_usuario" maxlength="40" title="Insira o nome..">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group fix-column" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="nm_senha_usuario">Senha atual</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="password" class="form-control" maxlength="20" id="nm_senha_usuario" title="Insira sua senha">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="cd_cpf">CPF</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="text" class="form-control" id="cd_cpf" maxlength="11" title="Insira seu cpf">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group fix-column" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="nm_nova_senha">Nova senha</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="password" class="form-control"maxlength="20" id="nm_nova_senha" title="Nova Senha..">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="nm_email">Email</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="email" class="form-control" maxlength="50" id="nm_email" title="Insira seu email">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group fix-column" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="cd_telefone">Telefone</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="text" class="form-control" id="cd_telefone" maxlength="10" title="Insira seu telefone">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group">
+                                        <label class="control-label col-sm-12 col-md-12 col-xs-12" style="text-align: center; padding-bottom: 1%;"  for="id_bandeira">Bandeiras aceitas</label>
+                                        <div class="col-sm-12 col-md-12 col-xs-12 text-center">
+                                            <img class="bandeira-cartao" alt="Bandeira americanExpress" title="Bandeira americanExpress"  src="assets/images/americaexpress-flag.png" data-active="on" style="margin: 0 5%; cursor: pointer"></img>
+                                            <img class="bandeira-cartao" alt="Bandeira mastercard" title="Bandeira mastercard"  src="assets/images/mastercard-flag.png" data-active="off" style="margin: 0 5%; cursor: pointer"></img>
+                                            <img class="bandeira-cartao" alt="Bandeira visa" title="Bandeira visa"  src="assets/images/visa-flag.png" data-active="off" style="margin: 0 5%; cursor: pointer"></img>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group"><!--  -->
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="cd_cartao">Número do cartão</label>
+                                        <div class="col-sm-8 col-xs-8 col-md-8 has-feedback">
+                                            <input type="text" class="form-control" id="cd_cartao" maxlength="3" title="Insira seu número de cartão">
+                                            <i class="glyphicon glyphicon-asterisk form-control-feedback" style="color: red"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group fix-column" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="nm_titular">Titular</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="nm_titular" disabled title="Nome do titular">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group"><!--  -->
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="dt_validade">Validade do cartão</label>
+                                        <div class="col-sm-8">
+                                            <input type="date" class="form-control" id="dt_validade" disabled title="Validade do cartão">
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 col-sm-6 col-xs-12">
+                                <div class="row">
+                                    <div class="form-group fix-column" >
+                                        <label class="control-label col-sm-4 col-md-4 col-xs-4" for="cd_seguranca_cartao">Código de segurança</label>
+                                        <div class="col-sm-8">
+                                            <input type="text" class="form-control" id="cd_seguranca_cartao"  title="Código de segurança do cartão">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-12 col-sm-12 col-xs-12 text-center">
+                                <button type="button" id="btn_salvar_perfil" title="Salvar" class="btn btn-lg btn-primary ">Salvar</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+		    </div>
+		    <!--<div class="row">-->
+		    <!--    <div class="col-md-12 text-right">-->
+		    <!--        <a role="button" data-toggle="modal" data-target="#novaConta" style="width: 2em; border-radius: 50%; background-color: #51B8B4; margin-top: 12%; margin-right: 3%;font-size: 2em; color: white" class="btn btn-md">+</a>-->
+		    <!--    </div>-->
+		    <!--</div>-->
+		</div>
+		
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  	
+  	<!-- Angular script -->
+  	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+  	
+  	<script src="assets/js/system.js"></script>
+  	
+  	<script type="text/javascript" src="assets/js/mask.js"></script>
+  	
+  	<script type="text/javascript">
+  	    $(document).ready( function(){
+  	        $("#cd_telefone").mask("(99)9999-9999");
+            $("#cd_cpf").mask("999.999.999-99");
+            $("#cd_cartao").mask("9999-9999-9999-9999");
+  	    } );
+  	</script>
+  	
+	</body>
+</html>
