@@ -1,0 +1,29 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Projeto de Economia</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom styles for this template -->
+        <link href="css/main.css" rel="stylesheet">
+        <link href="css/hr-separator.css" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="navbar navbar-static-top">
+            <div class="container">
+                <a class="navbar-brand">Projeto de Economia</a>
+                <ul class="nav navbar-nav pull-right">
+                    <li><a href="index.jsp">Início</a></li>
+                    <li><a href="amortizacao-constante.jsp">Constante</a></li>
+                    <li><a href="amortizacao-americana.jsp">Americano</a></li>
+                    <li><a href="amortizacao-price.jsp">Price</a></li>
+                </ul>
+            </div>
+        </nav>  
+        <div class="container">
