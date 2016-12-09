@@ -1,0 +1,15 @@
+.focus {
+    transition: box-shadow 0.5s;  
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
+
+.footer-fixed
+{
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+  /*background-color: #6dbfab;*/
+  width: 98vw;
+  color: white;
+  font-weight: bold;
+}

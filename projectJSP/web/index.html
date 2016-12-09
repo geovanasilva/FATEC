@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>4º Projeto OOP</title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/simple-sidebar.css" rel="stylesheet" type="text/css"/>
+    <link href="css/stylesheet.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!-- Sidebar -->
+        <div class="row">
+            <div class="col-md-2 col-sm-4 sidebar">
+                <ul class="list">
+                    <li>
+                        <a style="cursor: pointer" data-name="call-menu" ><i class="glyphicon glyphicon-menu-hamburger"></i>Menu</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html"><i class="glyphicon glyphicon-home"></i>Início</a>
+                    </li>
+                    
+                    <li>
+                        <a href="clientes.jsp"><i class="glyphicon glyphicon-briefcase"></i>Clientes</a>
+                    </li>
+                    
+                    <li>
+                        <a href="fornecedor.jsp"><i class="glyphicon glyphicon-ok"></i>Fornecedores</a>
+                    </li>
+                    <li>
+                        <a href="sair.jsp"><i class="glyphicon glyphicon-remove"></i>Sair</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- A classe col-md-offset-2 "pula" duas colunas e col-md-10, bem, diz que a div terá o tamanho de dez colunas -->
+        <div class="main-content-index col-md-10 col-md-offset-2 col-sm-8 team">
+            <div align="center" class="row">
+                <h1 style="text-shadow: 1px 1px LightSeaGreen; ">A equipe</h1><br><br>
+                    <div class="col-md-4 focus">
+                        <img class="img-circle img-responsive img-center img-animate" src="imagens/geovana.png">
+                        <h2>Geovana Silva</h2>
+                        <p style="text-align: justify">Cursa Análise e Desenvolvimento de Sistemas na Fatec Praia Grande, não vive sem os cachos e no futuro, pretende trabalhar com <strong>front-end</strong> futuramente.</p>
+                    </div>
+                    <div class="col-md-4 focus">
+                        <img class="img-circle img-responsive img-center img-animate" src="imagens/jorge.png">
+                        <h2>Jorge Helio</h2>
+                        <p style="text-align: justify">Faz Análise e Desenvolvimento de Sistemas na Fatec Praia Grande, adora tocar um cavaquinho e tem como objetivo trabalhar com <strong>desenvolvimento mobile</strong> no futuro.</p>
+                    </div>
+                    <div class="col-md-4 focus">
+                        <img class="img-circle img-responsive img-center img-animate" src="imagens/galdino.png">
+                        <h2>Matheus Galdino</h2>
+                        <p style="text-align: justify">Estuda Análise e Desenvolvimento de Sistemas na Fatec Praia Grande, meio maluco e quer trabalhar como <strong>backend (Canadá, Alemanhã, Irlanda)</strong> no exterior.</p>
+                    </div>
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer-fixed">
+          <div class="container ">
+            <div class="row">
+              <div class="col-md-4">
+                Fatec Praia Grande
+              </div>
+              <div class="col-md-4">
+                <!-- Nothing comes here -->
+              </div>
+              <div class="col-md-4 text-right">
+                Feito com muito amor&nbsp;
+                <span class="glyphicon glyphicon-heart" style="color: red"></span>
+              </div>
+            </div>
+          </div>
+        </footer>
+    </div>
+    
+    <!-- arquivos JS -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".img-animate").mouseenter(function(){
+                $(this).addClass('animated shake');
+            })
+            
+            .mouseleave(function(){
+                $(this).removeClass('animated shake');
+            });
+        });
+    </script>
+</body>
+
+</html>
+ 
