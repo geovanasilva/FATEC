@@ -1,4 +1,4 @@
-# JSP_temporario
+# JSP
 
 Crie um projeto de aplicação web para controle de dois cadastros:
 Clientes: com nome, cpf, rg, email, telefone e endereço;
