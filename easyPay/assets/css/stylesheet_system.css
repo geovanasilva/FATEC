@@ -1,0 +1,134 @@
+/* FONTS */
+@import url(https://fonts.googleapis.com/css?family=Arvo:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+/*
+    All global stylesheet content must be here
+*/
+
+
+/*  HEADER  */
+
+
+body 
+{
+    font-family: 'Arvo', serif;
+    
+}
+
+.navbar 
+{
+    background-color: #4f827d;
+    border: none;
+    border-radius: 0px;
+    margin-bottom: 0px;
+    /*height: 70px;*/
+}
+
+.navbar-header .navbar-brand
+{
+    color: #fff;
+    font-family: 'Montserrat', serif;
+    font-weight: 700;
+}
+
+.linha-navbar
+{
+    padding-top: 1em;
+}
+
+.navbar-nav > li > a 
+{
+	color: #fff !important;
+}
+
+/*  FIM HEADER  */
+
+
+.navbar-inverse .navbar-nav > li > a
+{
+    background-color: #4F827D !important;
+}
+
+.navbar-inverse .navbar-collapse 
+{
+    border-color: #4F827D;
+}
+
+@media(max-width: 893px){
+  
+  .navbar-sidebar 
+  {
+    display: none;
+  }
+  
+  .tableContas
+  {
+    margin: 3%;
+    padding: 1%;
+  }
+  
+}
+
+
+@media (min-width: 894px) {
+  .fix-column
+  {
+    padding-right: 20%;
+  }
+  
+  
+    
+    
+  .tableContas
+  {
+    margin-top: 3%;
+    padding-top: 3%;
+  }
+
+
+/*
+ * ################### Sidebar
+ *
+ * Font: https://getbootstrap.com/examples/dashboard/
+*/
+    
+  .navbar-sidebar 
+  {
+    position: fixed;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 15%;
+    display: block;
+    padding: 1%;  
+    overflow-x: hidden; 
+    overflow-y: auto; 
+    background-color: #eee;
+    /*border-right: 1px solid #75ACA4;*/
+  }
+  
+  /* Sidebar navigation */
+  .navbar-sidebar > .nav-sidebar 
+  {
+      
+    margin-right: -21px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    
+  }
+
+  /**
+  * Nos objetos '<a>' que estiverem com a classe 'active' que pertencerem à classe 'nav-sidebar', quando normal, focus ou em hover
+  */
+  .navbar-sidebar > .nav-sidebar > .active > a,
+  .navbar-sidebar > .nav-sidebar > .active > a:hover,
+  .navbar-sidebar > .nav-sidebar > .active > a:focus 
+  {
+      
+    color: #fff;
+    background-color: #428bca;
+    
+  }
+}
