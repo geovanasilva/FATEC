@@ -1,7 +1,7 @@
 ## Echo Hotel
 
-Work done for the discipline of Software Engineering
+Trabalho realizado para a disciplina de Engenharia de Software
 
-## Collab
+## Colaboração
 
 Backend PHP: [marcelowzd](https://github.com/marcelowzd) :grin:
