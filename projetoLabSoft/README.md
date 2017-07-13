@@ -1,3 +1,5 @@
-# projetoLabSoft
+﻿#Echo Hotel
 
-Projeto para a disciplina de laboratório de engenharia de software.
+Work done for the discipline of Software Engineering
+
+>Collab: marcelowzd@
